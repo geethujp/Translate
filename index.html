@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = "translateApp">
+	<head>
+    	<title>Translate</title>
+    	<link rel = "stylesheet" href = "assets/css/style.css">
+    	<link rel = "icon" href = "assets/images/logo.png" type = "image/gif" sizes = "16x16"> <!--favicon-->
+	</head>
+	<body>
+		<!-- Partials-->
+		<header ui-view = "header"></header>
+		<section ui-view = "content"></section>
+		<footer ui-view = "footer"></footer>
+		<!--Library files-->
+    	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+    	<script src = "//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    	<!--Module-->
+    	<script src = "app/scripts/app.js"></script>
+    	<!--Controllers-->
+    	<script src = "app/controller/translateController.js"></script>
+    	<!--Services-->
+    	<!--Routes-->
+    	<script src = "app/routes/route.js"></script>
+	</body>
+</html>
