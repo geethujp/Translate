@@ -2,7 +2,7 @@
     'use strict';
     angular.module('translateApp')
         .controller('translateCtrl', translateCtrl);
-    translateCtrl.$inject = ["$scope", "$rootScope"];
+    translateCtrl.$inject = ["$scope", "$rootScope","$translate"];
 
     function translateCtrl($scope, $rootScope) {
         $scope.names = [
@@ -13,5 +13,7 @@
         console.log($scope.names);
     }
 
-
+ $scope.changeLanguage = function (langKey) {
+        $translate.use(langKey);
+    };
 })();

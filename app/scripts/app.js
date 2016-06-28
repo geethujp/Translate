@@ -1,4 +1,4 @@
 (function() {
   'use strict';
-  var translateApp = angular.module('translateApp',  ['ui.router']);
+  var translateApp = angular.module('translateApp',  ['ui.router','pascalprecht.translate']);
 })();
