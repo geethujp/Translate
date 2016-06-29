@@ -13,6 +13,10 @@
                         templateUrl: 'app/partials/content.html',
                         controller: 'translateCtrl'
                     },
+                    'map': {
+                        templateUrl: 'app/partials/map.html',
+                        controller: 'mapCtrl'
+                    },
                     'footer': {
                         templateUrl: 'app/partials/footer.html'
                     }
